@@ -73,7 +73,7 @@ void ShaderProgram::createAndCompileShaderProgram(QString vertFile,
     // Set up the direct filepath to the vertex and fragment
     // shader files.
     QString projectPath = getCurrentPath();
-    projectPath.append("/assignment_package/glsl/");
+    projectPath.append("/shaderprogram/glsl/");
     QString vertPath = projectPath + vertFile;
     QString fragPath = projectPath + fragFile;
 

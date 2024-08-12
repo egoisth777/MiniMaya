@@ -44,6 +44,7 @@ file(GLOB_RECURSE TARGET_SOURCES
         ${TARGET_SOURCE_PATH}/*.c
 )
 
+# Statically linking std libraries
 if(WIN32)
     set(CMAKE_EXE_LINKER_FLAGS "-static")
 endif()
