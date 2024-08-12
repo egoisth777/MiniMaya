@@ -11,7 +11,7 @@ set(TARGET_SOURCE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/src)
 set(TARGET_DEPENDENCY_PATH ${CMAKE_CURRENT_SOURCE_DIR}/dependencies)
 set(TARGET_INCLUDE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/include)
 set(TARGET_UI_FORMS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/forms)
-set(TARGET_SHADER_PROGRAM_PATH ${CMAKE_CURRENT_SOURCE_DIR}/forms)
+set(TARGET_SHADER_PROGRAM_PATH ${CMAKE_CURRENT_SOURCE_DIR}/shaderprogram)
 
 # Set some CMake Prepend paths
 set(CMAKE_PREFIX_PATH "D:/libs/qt/6.2.2/mingw_64") # @TODO change this path accordingly to your project
@@ -55,6 +55,7 @@ target_include_directories(MiniMaya PRIVATE
         ${TARGET_SOURCE_PATH}
         ${TARGET_INCLUDE_PATH}
 )
+
 target_link_libraries(MiniMaya PRIVATE
         Qt6::Widgets
         Qt6::Gui
